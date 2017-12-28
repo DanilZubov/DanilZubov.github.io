@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--	meta для соц сетей	-->
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Новогоднее настроение)">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="Поздравления с новым 2018 годом!">
+    <meta property="og:site_name" content="Новый год">
+    <meta property="article:author" content="Данил Зубов">
+    <title>Новый 2018 год!</title>
+    <!-- connect -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--	favicon		-->
+    <link rel="shortcut icon" type="image/x-icon" href="img/iconyear.png">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- Подключение плагина -->
+    <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+    <script src='csnow/csnow.js'></script>
+        <script>
+        $(document).ready(function(){
+        $(document).snowfall({
+        flakeCount : 66, //количество снежинок
+        flakeColor : '#FFFFFF', //цвет снежинок
+        flakeIndex: 999999, //z-index снежинок
+        minSize : 5, //минимальный размер снежинок
+        maxSize : 7, //максимальный размер снежинок
+        minSpeed : 1, //минимальная скорость падения снежинок
+        maxSpeed : 2, //максимальная скорость падения снежинок
+        round : true, //округлая форма снежинок: "да" - true, "нет" - false
+        });
+        });
+    </script>
+  </head>
+  <body>
+
+    <div class="main" data-vide-bg="video/Disco">
+       <div class="main-overlay"></div>
+        <div class="main-wrapper">
+            <div class="main-header animated flash">
+                <h1>Happy new year!</h1>
+                    <div class="main-line animated fadeInLeft"></div>
+                        <p>Hello 2018</p>
+                </div>
+                <h1 id="clock">00:00:00</h1>
+        </div>
+    </div>
+    
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="js/clock.js"></script>
+    <script src="js/jquery.vide.min.js"></script>
+  </body>
